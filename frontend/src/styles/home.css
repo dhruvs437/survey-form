@@ -1,0 +1,15 @@
+#home{
+    background-image: url('../../public/home.jpg');
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-color: #000000b0;
+    background-blend-mode: darken;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    color: white;
+}
