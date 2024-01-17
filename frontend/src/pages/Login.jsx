@@ -15,7 +15,7 @@ const Login = ({userExist,setUserExist}) => {
   };
   const login = async() => {
     //sending data to server
-    const res=await fetch(`http://localhost:5100/login`, {
+    const res=await fetch(`https://survey-form-api-tau.vercel.app/login`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",

@@ -5,7 +5,7 @@ import '../styles/admin.css'
 const Admin = ({userExist}) => {
     const navigate = useNavigate();
     const getData = async ()=>{
-        const res=await fetch(`http://localhost:5100/admin`, {
+        const res=await fetch(`https://survey-form-api-tau.vercel.app/admin`, {
         method: "get",
         })
         let data = await res.json();

@@ -13,7 +13,7 @@ const Form = () => {
     }
     const submitIt = async() => {
         //sending data to server
-        const res=await fetch(`http://localhost:5100/form`, {
+        const res=await fetch(`https://survey-form-api-tau.vercel.app/form`, {
           method: "post",
           headers: {
             "Content-Type": "application/json",
