@@ -5,7 +5,7 @@ const FORM = mongoose.model("FORM");
 
 
 // to get user profile
-router.post("/form",(req,res)=>
+router.post("/",(req,res)=>
 {    
   const {name,gender,email,address,message,phone,nationality}=req.body;
   if(!name|| !gender||!email||!address||!message||!phone||!nationality)

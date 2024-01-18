@@ -5,7 +5,7 @@ const FORM = mongoose.model("FORM");
 
 
 // to get user profile
-router.get("/admin",async (req,res)=>
+router.get("/",async (req,res)=>
 {    
     const data = await FORM.find();
     res.status(200).json({data:data});

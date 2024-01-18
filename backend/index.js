@@ -21,8 +21,10 @@ db.once('open', () => {
 
 
 app.use('/login', require("./routes/login"));
-app.use(require('./routes/form'))
-app.use(require('./routes/admin'));
+app.use('/form', require("./routes/form"));
+app.use('/admin', require("./routes/admin"));
+// app.use(require('./routes/form'))
+// app.use(require('./routes/admin'));
 
 app.listen(PORT,()=>{
     console.log("app is listening at port:" ,PORT);
